@@ -227,7 +227,7 @@ Paste current version, Routinehub ID, and name variables below</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
-							<key>{596, 1}</key>
+							<key>{603, 1}</key>
 							<dict>
 								<key>Aggrandizements</key>
 								<array>
@@ -245,7 +245,7 @@ Paste current version, Routinehub ID, and name variables below</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
-							<key>{618, 1}</key>
+							<key>{625, 1}</key>
 							<dict>
 								<key>Aggrandizements</key>
 								<array>
@@ -288,7 +288,7 @@ return "A rollback is available for ￼";
 return "An update is available for ￼";
 }
 }
-return "NoUpdates";
+return "Continue running";
 }
 const version1 = "￼";
 const version2 = "￼";
@@ -333,35 +333,6 @@ document.write(check(version1, version2));
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.showresult</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>Text</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>attachmentsByRange</key>
-						<dict>
-							<key>{0, 1}</key>
-							<dict>
-								<key>OutputName</key>
-								<string>Contents of Web Page</string>
-								<key>OutputUUID</key>
-								<string>1639D6A2-4F11-4747-B532-98D4CC86F21A</string>
-								<key>Type</key>
-								<string>ActionOutput</string>
-							</dict>
-						</dict>
-						<key>string</key>
-						<string>￼</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenString</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.conditional</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -370,7 +341,7 @@ document.write(check(version1, version2));
 				<key>WFCondition</key>
 				<integer>5</integer>
 				<key>WFConditionalActionString</key>
-				<string>NoChanges</string>
+				<string>Continue running</string>
 				<key>WFControlFlowMode</key>
 				<integer>0</integer>
 				<key>WFInput</key>
