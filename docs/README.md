@@ -1,2 +1,1 @@
-# Page
-
+# Welcome to vUpdate Documentation!
